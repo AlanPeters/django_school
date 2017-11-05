@@ -14,7 +14,7 @@
 <h3>Sections</h3>
 <ul>
     {% for section in sections %}
-    <li>taught by {{section.professor.name }} at {{section.time}}</li>
+    <li>Taught by <a href="{% url 'professors:detail' section.professor.id %}">{{section.professor.name }}</a> at {{section.time}}</li>
     {% endfor %}
 </ul>
 {% endif %}

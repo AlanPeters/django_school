@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.shortcuts import get_object_or_404
+from django.shortcuts import redirect
 from django.http import HttpResponse
 from django.template import loader
 from .models import Professor
@@ -34,4 +35,4 @@ def create_section(request, professor_id):
     time = request.POST['time']
     newSection = Section(professor= professor, course= course, time = time)
     newSection.save()
-    return HttpResponse("test"+time)
+    return redirect('professors:detail', professor_id=professor_id)

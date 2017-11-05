@@ -9,7 +9,10 @@
 <h3>Sections</h3>
 <ul>
     {% for section in sections %}
-    <li>{{section.course.name }} at {{section.time}}</li>
+    <li>
+        <a href="{% url 'courses:detail' section.course.id %}">{{section.course.name }}</a> at {{section.time}} | 
+        <a href="{% url 'sections:delete' section.id %}">Drop this section</a>
+    </li>
     {% endfor %}
 </ul>
 {% endif %}
