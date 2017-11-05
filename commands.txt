@@ -1,0 +1,28 @@
+django-admin startproject school
+python manage.py startapp professors
+python manage.py startapp courses
+python manage.py startapp sections
+
+
+
+python manage.py migrate
+
+python manage.py makemigrations professors
+python manage.py makemigrations courses
+python manage.py makemigrations sections
+
+
+python manage.py sqlmigrate professors 0001
+python manage.py sqlmigrate courses 0001
+python manage.py sqlmigrate sections 0001
+
+python manage.py migrate
+
+python manage.py createsuperuser
+    admin
+    alan3051@gmail.com
+    batterystaple
+
+
+
+
