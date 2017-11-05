@@ -1,0 +1,17 @@
+<h1>Professor {{professor.name}}</h1>
+
+<p>
+    <strong>Department</strong>
+    {{ professor.department }}
+</p>
+
+{% if sections %}
+<h3>Sections</h3>
+<ul>
+    {% for section in sections %}
+    <li>{{section.course.name }} at {{section.time}}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+<a href="/professors">Back</a>
