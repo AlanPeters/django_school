@@ -15,8 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from professors import views
 
 urlpatterns = [
+    url(r'^$', views.professors),
     url(r'^professors/', include('professors.urls')),
     url(r'^courses/', include('courses.urls')),
     url(r'^sections/', include('sections.urls')),
