@@ -151,7 +151,7 @@ Admin.site.register(Professor)
 This gave me the ability to test the models without having to build any routes
 or views. 
 
-![Admin Console](/README_IMAGES/admin_console_1.png?raw=true)
+![Admin Console](/README_IMAGES/admin_console1.png?raw=true)
 ![Admin Console](/README_IMAGES/admin_console_2.png?raw=true)
 
 
@@ -166,7 +166,7 @@ same, but the front-end is different. Here is the new structure for the views.
    * Index
    * Detail
    * Add_Section (GET)
-   * Create_Seaction (POST)
+   * Create_Section (POST)
 * Courses
    * Index
    * Detail
@@ -235,7 +235,7 @@ with CSS and given better navigation.
 
 ![Professor List](/README_IMAGES/Professors_View.jpg?raw=true)
 ![Professor View](/README_IMAGES/Professor_Detail.png?raw=true)
-![Create a Section](/README_IMAGES/create_A_Section.png?raw=true)
+![Create a Section](/README_IMAGES/Create_A_Section.png?raw=true)
 ![Course Detail](/README_IMAGES/Course_Detail.png?raw=true)
 
 
